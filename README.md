@@ -49,6 +49,16 @@ init = Initializer()
 init.create_required_entities(fix_existing_data=True)
 ```
 
+##### Loading Sample Data
+
+To fill your Atlas with set of sample data adhering to Amundsen Atlas types you have just registered, simply do:
+
+```python
+from amundsenatlastypes.sample_data import SampleDataLoader
+
+loader = SampleDataLoader()
+loader.register_sample_data()
+```
 
 #### Functionality:
 `amundsenatlastypes` provides a number of functions that can be used separately to 
